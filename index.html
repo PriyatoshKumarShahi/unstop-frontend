@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unstop | Explore</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="/assets//logo.jpeg" alt="">
+         <p style="margin-top: -50px; margin-left: 60px;"> Unstop</p>
+        </div>
+        <ul>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#opportunities">Opportunities</a></li>
+
+            <li><a href="#study">Study</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to  <span style="color: rgb(223, 51, 51);">Unstop</span>
+           <div class="typed"></div></h1>
+    </header>
+
+    <section id="team" class="team-section" data-aos="fade-up">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="/assets//img3.jpeg" alt="Team Member">
+                <h3>Jagriti Sharma</h3>
+                <p>Lead Ingiter</p>
+            </div>
+            <div class="team-card">
+                <img src="/assets/img2.jpeg" alt="Team Member">
+                <h3>Yemen Fatima</h3>
+                <p>Promotion Head</p>
+            </div>
+            <div class="team-card">
+                <img src="/assets/img1.jpeg" alt="Team Member">
+                <h3>Anirudh Chaudhary</h3>
+                <p>Social Media Head</p>
+            </div>
+            <div class="team-card">
+                <img src="/assets/img6.jpeg" alt="Team Member">
+                <h3>Harshit Shrivastava</h3>
+                <p>Creative Head</p>
+            </div>
+            <div class="team-card">
+                <img src="/assets/img5.jpeg" alt="Team Member">
+                <h3>Ayush Chauhan</h3>
+                <p>Technical Head</p>
+            </div>
+           
+           
+        </div>
+    </section>
+    <section id="study" class="study-section" 
+    >
+      <h2>Study Resources</h2>
+      <div class="study-links">
+          <div class="study-card" data-aos="flip-left"data-aos-offset="300">
+              <h3>AKTU B.Tech Syllabus</h3>
+              <p>Access the detailed syllabus for all B.Tech courses under AKTU.</p>
+              <a href="study.html">Explore</a>
+          </div>
+          <div class="study-card" data-aos="flip-up"data-aos-offset="400">
+              <h3>Previous Year Papers</h3>
+              <p>Prepare better with solved question papers from past years.</p>
+              <a href="study.html">Explore</a>
+          </div>
+          <div class="study-card" data-aos="flip-right"data-aos-offset="350">
+              <h3>Sessional Test Papers</h3>
+              <p>Practice with sessional test papers for your exams.</p>
+              <a href="study.html">Explore</a>
+          </div>
+      </div>
+  </section>
+    <section class="main-section" id="opportunities">
+      <div class="text-content">
+          <h1><span style="color: rgb(112, 112, 155);">Unlock</span> Your Career</h1>
+          <p>Explore opportunities from across the globe to grow, showcase skills, gain CV points & get hired by your dream company.</p>
+      </div>
+      <div class="cards-container">
+          <div class="card">
+              <h3>Internships</h3>
+              <p>Gain valuable real-world experience with top companies through a variety of internships.</p>
+              <a href="https://unstop.com/">Learn More</a>
+          </div>
+          <div class="card">
+              <h3>Hackathons</h3>
+              <p>Showcase your skills and creativity by participating in exciting hackathons.</p>
+              <a href="https://unstop.com/">Register Now</a>
+          </div>
+          <div class="card">
+              <h3>Quizzes</h3>
+              <p>Test your knowledge and compete with peers in engaging quizzes.</p>
+              <a href="https://unstop.com/">Participate</a>
+          </div>
+          <div class="card">
+              <h3>Workshops</h3>
+              <p>Learn and grow with workshops conducted by industry experts.</p>
+              <a href="https://unstop.com/">Explore Workshops</a>
+          </div>
+      </div>
+  </section>
+  <section class="uploadSection">
+
+
+  <div class="upload-container">
+    <h2>Upload Your Project</h2>
+    <form id="uploadForm">
+      <div class="form-group">
+        <label for="projectName">Project Name</label>
+        <input type="text" id="projectName" name="projectName" placeholder="Enter project name" required>
+      </div>
+      <div class="form-group">
+        <label for="projectDescription">Project Description</label>
+        <textarea id="projectDescription" name="projectDescription" placeholder="Enter project description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="projectFile">Upload File</label>
+        <input type="file" id="projectFile" name="projectFile" required>
+      </div>
+      <button type="submit" class="upload-btn">Upload</button>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <p class="success-message" id="successMessage">Project uploaded successfully!</p>
+    </form>
+  </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <form action="#" class="contact-form">
+      <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+  </form>
+</section>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 Unstop || All rights reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
