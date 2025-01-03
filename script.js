@@ -32,20 +32,11 @@ uploadForm.addEventListener('submit', (e) => {
   }, 300);
 });
 
-
-
-  
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
       e.preventDefault();
-
-      const targetId = this.getAttribute('href').slice(1);
-      const targetSection = document.getElementById(targetId);
-
-      if (targetSection) {
-          targetSection.scrollIntoView({
-              behavior: 'smooth'
-          });
-      }
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
   });
 });
